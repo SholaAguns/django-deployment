@@ -1,0 +1,44 @@
+h1{
+    color: blue;
+}
+.row_class{
+        border: 2px solid black;
+}
+
+table, th, td{
+    border: 2px solid black;
+}
+
+.border_class{
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+}
+
+tr td{
+    border: 2px solid black;
+    text-align: center;
+}
+.column {
+  float: left;
+  width: 80px
+  height: 80px;
+  border: 2px solid black;
+  font-size: 10px;
+   text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  border: 2px solid black;
+  width: 80px
+  height: 80px;
+}
+
+.li{
+    border: 2px solid black;
+}

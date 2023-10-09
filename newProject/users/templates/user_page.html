@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Inside user page html</h2>
+
+<!--<div>-->
+<!--    {% if user_list %}-->
+<!--        <ol>-->
+<!--    {% for acc in user_list %}-->
+
+<!--            <li>User {{acc.id }}</li>-->
+<!--            <ul>-->
+<!--                <li>{{ acc.first_name }}</li>-->
+<!--                <li>{{ acc.last_name }}</li>-->
+<!--                <li>{{ acc.user_email }}</li>-->
+<!--            </ul>-->
+
+<!--    {% endfor %}-->
+<!--        </ol>-->
+
+<!--    {% else %}-->
+<!--    <p>NO USERS FOUND</p>-->
+<!--    {% endif %}-->
+<!--</div>-->
+
+<div class="container">
+    <h1 align="center">Please sign up here</h1>
+    <form method="POST" align="center">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+
+
+</div>
+
+
+{% endblock %}

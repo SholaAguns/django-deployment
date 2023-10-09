@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load myextras %}
+
+{% block content %}
+
+<h1>Welcome to templates index</h1>
+
+{{ text }} {{ number }}
+
+<!--Make the text all uppercase-->
+<h3>{{ text|upper }}</h3>
+
+<!--Add to a number-->
+<h3>{{ number|add:"90" }}</h3>
+
+<!--Use custom template filter-->
+<h3>{{ text|cut:"text" }}</h3>
+
+<!--Use custom template filter-->
+<h3>{{ text|lower }}</h3>
+
+{% endblock %}

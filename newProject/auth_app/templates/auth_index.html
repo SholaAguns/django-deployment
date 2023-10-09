@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Welcome to User Auth page</h1>
+
+<a href="{% url 'auth_app:registration' %}">Click me for the registration page</a><br>
+<a href="{% url 'auth_app:user_login' %}">Click me for the login page</a><br>
+
+{% endblock %}

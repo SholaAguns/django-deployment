@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Index in New App</h1>
+
+<h2>Here are your access records</h2>
+<div>
+    {% if webpages_list %}
+    <table>
+        <tr>
+             <td class="border_class">Site Name</td>
+            <td class="border_class">Date Accessed</td>
+        </tr>
+    {% for acc in webpages_list %}
+    <tr>
+        <td>{{ acc.name }}</td>
+        <td>{{ acc.date }}</td>
+    </tr>
+    {% endfor %}
+
+    </table>
+
+    {% else %}
+    <p>NO ACCESS RECORDS FOUND</p>
+    {% endif %}
+
+
+</div>
+{% endblock %}

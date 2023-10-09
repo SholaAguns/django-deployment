@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Welcome to relative URL templates</h1>
+
+<a href="{% url 'templates_app:other' %}">Click me for the other page</a><br>
+<a href="{% url 'admin:index' %}">Click me for the admin page</a><br>
+<a href="{% url 'templates_app:index' %}">Click me for the templates home page</a><br>
+<a href="{% url 'new_app:base' %}">Click me for the home page</a><br>
+
+{% endblock %}
